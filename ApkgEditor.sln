@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApkgEditor", "ApkgEditor\ApkgEditor.csproj", "{5534A2C2-BF96-4103-87DA-8EEADEEE7015}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnkiSharp", "..\AnkiSharp\AnkiSharp.csproj", "{5A878BAD-1979-4EA2-8916-1260F448D372}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{BABA6D94-2ABE-4E5B-AEB4-316C6C7C3554}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5534A2C2-BF96-4103-87DA-8EEADEEE7015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5534A2C2-BF96-4103-87DA-8EEADEEE7015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5534A2C2-BF96-4103-87DA-8EEADEEE7015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5534A2C2-BF96-4103-87DA-8EEADEEE7015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A878BAD-1979-4EA2-8916-1260F448D372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A878BAD-1979-4EA2-8916-1260F448D372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A878BAD-1979-4EA2-8916-1260F448D372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A878BAD-1979-4EA2-8916-1260F448D372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BABA6D94-2ABE-4E5B-AEB4-316C6C7C3554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BABA6D94-2ABE-4E5B-AEB4-316C6C7C3554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BABA6D94-2ABE-4E5B-AEB4-316C6C7C3554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BABA6D94-2ABE-4E5B-AEB4-316C6C7C3554}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D576292D-BDA1-4B95-82EC-BD4E4F16F9BD}
+	EndGlobalSection
+EndGlobal
