@@ -15,10 +15,10 @@ namespace ApkgEditor.Structure
         {
         }
 
-        public virtual DbSet<Cards> Cards { get; set; }
+        public virtual DbSet<Card> Cards { get; set; }
         public virtual DbSet<Col> Col { get; set; }
-        public virtual DbSet<Graves> Graves { get; set; }
-        public virtual DbSet<Notes> Notes { get; set; }
+        public virtual DbSet<Grave> Graves { get; set; }
+        public virtual DbSet<Note> Notes { get; set; }
         public virtual DbSet<Revlog> Revlog { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -32,7 +32,7 @@ namespace ApkgEditor.Structure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Cards>(entity =>
+            modelBuilder.Entity<Card>(entity =>
             {
                 entity.ToTable("cards");
 
@@ -129,7 +129,7 @@ namespace ApkgEditor.Structure
                 entity.Property(e => e.Ver).HasColumnName("ver");
             });
 
-            modelBuilder.Entity<Graves>(entity =>
+            modelBuilder.Entity<Grave>(entity =>
             {
                 entity.HasNoKey();
 
@@ -142,7 +142,7 @@ namespace ApkgEditor.Structure
                 entity.Property(e => e.Usn).HasColumnName("usn");
             });
 
-            modelBuilder.Entity<Notes>(entity =>
+            modelBuilder.Entity<Note>(entity =>
             {
                 entity.ToTable("notes");
 

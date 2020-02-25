@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApkgEditor", "ApkgEditor\Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnkiSharp", "..\AnkiSharp\AnkiSharp.csproj", "{5A878BAD-1979-4EA2-8916-1260F448D372}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{BABA6D94-2ABE-4E5B-AEB4-316C6C7C3554}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{BABA6D94-2ABE-4E5B-AEB4-316C6C7C3554}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MNVideoCardPatch", "MNVideoCardPatch\MNVideoCardPatch.csproj", "{E453AFC4-F9AB-4DC6-A60C-EE9E01550C23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{BABA6D94-2ABE-4E5B-AEB4-316C6C7C3554}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BABA6D94-2ABE-4E5B-AEB4-316C6C7C3554}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BABA6D94-2ABE-4E5B-AEB4-316C6C7C3554}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E453AFC4-F9AB-4DC6-A60C-EE9E01550C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E453AFC4-F9AB-4DC6-A60C-EE9E01550C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E453AFC4-F9AB-4DC6-A60C-EE9E01550C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E453AFC4-F9AB-4DC6-A60C-EE9E01550C23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

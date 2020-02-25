@@ -54,24 +54,24 @@ namespace ApkgEditor
         /// 解包apkg文件
         /// </summary>
         /// <param name="apkgPath"></param>
-        /// <param name="dirPath">可为null，默认放在临时文件夹</param>
-        public AnkiPkg(string apkgPath, string dirPath)
+        /// <param name="outputPath">可为null，默认放在临时文件夹</param>
+        public AnkiPkg(string apkgPath, string outputPath)
         {
-            if (dirPath == null)
-                dirPath = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
-            pkgDir = new DirectoryInfo(dirPath);
+            if (outputPath == null)
+                outputPath = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
+            pkgDir = new DirectoryInfo(outputPath);
             if (!pkgDir.Exists)
                 pkgDir.Create();
             //Load Database FileInfo
-            Database = new FileInfo(Path.Combine(dirPath, "collection.anki2"));
+            Database = new FileInfo(Path.Combine(outputPath, "collection.anki2"));
             //Load MediaList FileInfo
-            mediaList = new FileInfo(Path.Combine(dirPath, "media"));
+            mediaList = new FileInfo(Path.Combine(outputPath, "media"));
             //Instantiate Media
             Media = new List<MediaFile>();
             //Unzip Apkg
             var apkg = new FileInfo(apkgPath);
-            if (apkg.Exists && apkg.Extension == "akpg")
-                ZipFile.ExtractToDirectory(apkgPath, dirPath);
+            if (apkg.Exists && apkg.Extension == ".apkg")
+                ZipFile.ExtractToDirectory(apkgPath, outputPath);
             else
                 throw new FileNotFoundException("Apkg File not Found");
         }
@@ -140,6 +140,18 @@ namespace ApkgEditor
                     resultMedia.Add(item);
             }
             return resultMedia;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="filepath">b包括文件名</param>
+        public void Export(string filepath)
+        {
+            //检查完整性
+            FileInfo file = new FileInfo(filepath);
+            if (file.Exists)
+                file.Delete();
+            ZipFile.CreateFromDirectory(pkgDir.FullName, filepath);
         }
     }
 }

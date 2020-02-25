@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ApkgEditor.Structure
 {
-    public partial class Cards
+    public partial class Card
     {
         public long Id { get; set; }
         public long Nid { get; set; }
